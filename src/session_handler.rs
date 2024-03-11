@@ -1,5 +1,5 @@
-use std::net::{SocketAddr, TcpStream};
 use ssh::LocalSession;
+use std::net::{SocketAddr, TcpStream};
 
 pub fn create_session(addr: &SocketAddr, usr: &String, pass: &String ) -> LocalSession<TcpStream> {
     let session = ssh::create_session()
