@@ -1,5 +1,5 @@
-use std::net::TcpStream;
 use ssh::LocalSession;
+use std::net::TcpStream;
 
 pub fn run(session: &mut LocalSession<TcpStream>, command: &String) {
     let exec = session.open_exec().expect("Could not establish an SSH session with remote host");
