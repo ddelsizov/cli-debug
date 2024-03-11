@@ -1,8 +1,8 @@
 mod args;
-mod session_handler;
 mod command;
-use std::net::SocketAddr;
 use clap::Parser;
+mod session_handler;
+use std::net::SocketAddr;
 
 fn main() {
     let args = args::Args::parse();
