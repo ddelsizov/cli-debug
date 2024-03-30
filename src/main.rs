@@ -34,6 +34,6 @@ fn main() {
     let addr = SocketAddr::new(args.target, 22);
     let mut session = session_handler::create_session(&addr, &args.user, &args.pass);
     
-    command::run(&mut session, &args.cmd);
+    command::exec_command(&mut session, &args.cmd);
 }
 

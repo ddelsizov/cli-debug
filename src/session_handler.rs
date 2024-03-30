@@ -9,6 +9,5 @@ pub fn create_session(addr: &SocketAddr, usr: &String, pass: &String ) -> LocalS
         .connect(addr)
         .unwrap()
         .run_local();
-    info!("Connected!");
     session
 }
